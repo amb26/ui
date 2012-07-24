@@ -124,7 +124,8 @@ cspace = cspace || {};
                         options: {
                             renderOptions: {
                                 autoBind: true
-                            }
+                            },
+                            template: "{cspace.listView}.options.resources.template.resourceText"
                         }
                     },
                     pagerBar: {

@@ -59,7 +59,16 @@ var listViewTester = function ($) {
         var listView = cspace.listView(container, options);
         return listView;
     };
-    
-	return setupListView({}, undefined);
-
+  
+  var testit = function() {setupListView({}, undefined);}; 
+  
+  fluid.fetchResources({
+      template: {
+                fetchClass: "fastTemplate",
+                url: "../../webapp/html/components/ListViewTemplate.html",
+                options: {
+                    dataType: "html"
+                }
+            }
+      }, testit);
 };
